@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://code.angularjs.org/1.5.2/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script data-require="jquery@1.9.0" data-semver="1.9.0" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+    <link data-require="bootstrap@3.0.0" data-semver="3.0.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <script data-require="bootstrap@3.0.0" data-semver="3.0.0" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="task1.5.js"></script>
 </head>
-<body>
+
+<body ng-app="app" ng-controller="mainController">
+    <h1>{{message}}</h1>
+
+    <div class="container-div" ng-controller="firstController">
+        <modal lolo="modal1" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()"></modal>
+        <a href="#{{modal1}}" role="button" class="btn btn-info" data-toggle="modal">Launch Journal Modal</a>
+    </div>
+
+    <div class="container-div" ng-controller="secondController">
+        <modal lolo="modal1" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()"></modal>
+        <a href="#{{modal1}}" role="button" class="btn btn-info" data-toggle="modal">Launch Movie Modal</a>
+    </div>
 
 </body>
 </html>
