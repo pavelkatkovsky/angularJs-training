@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.angularjs.org/1.5.2/angular.js"></script>
+    <script src="task1.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body ng-app="test1" ng-controller="test1Controller">
+    <h1>{{sharedObject.value}}</h1>
+
+    <div class="container" ng-controller="parentCtrl1">
+        <label>
+            <input ng-model="sharedObject.value">
+        </label>
+        <div ng-controller="childCtrl1">
+            <h2>{{sharedObject.value}}</h2>
+        </div>
+    </div>
+
+    <div class="container" ng-controller="parentCtrl2">
+        <label>
+            <input ng-model="sharedObject.value">
+        </label>
+        <div ng-controller="childCtrl1">
+            <h2>{{sharedObject.value}}</h2>
+        </div>
+    </div>
+</body>
+</html>
