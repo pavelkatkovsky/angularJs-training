@@ -2,7 +2,7 @@ var app = angular.module('test1', []);
 
 app.controller('test1Controller', function($scope) {
    $scope.sharedObject = {};
-    $scope.sharedObject.value = 'Test 1';
+   $scope.sharedObject.value = 'Test 1';
 });
 
 app.controller('parentCtrl1', function($scope) {
