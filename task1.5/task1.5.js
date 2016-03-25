@@ -37,7 +37,7 @@ app.directive('modal', function () {
         restrict: 'E',
         transclude: true,
         scope: {
-            handler: '@',
+            handler: '=',
             title: '=',
             header: '=modalHeader',
             body: '=modalBody',
