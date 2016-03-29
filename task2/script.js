@@ -1,5 +1,9 @@
 var app = angular.module('task2', []);
 
+app.controller('mainController', ['$scope', function($scope){
+    $scope.rate = 3.14;
+}])
+
 app.component('tabControl', {
     transclude: true,
     controller: function() {

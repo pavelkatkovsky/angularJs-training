@@ -5,14 +5,15 @@
     <title>task2 - tabs</title>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body ng-app="task2">
+<body ng-app="task2" ng-controller="mainController">
     <tab-control>
-        <pane-control title="Hello">
-            <h4>Hello</h4>
-            <p>Lorem ipsum dolor sit amet</p>
+        <pane-control title="Tab 1">
+            <h4>google.com page</h4>
+            <p>rate is {{rate}}</p>
         </pane-control>
-        <pane-control title="World">
+        <pane-control title="Tab 2">
             <h4>World</h4>
             <em>Mauris elementum elementum enim at suscipit.</em>
             <p><a href ng-click="i = i + 1">counter: {{i || 0}}</a></p>

@@ -1,0 +1,16 @@
+.menu{
+    float:left;
+    margin-right: 10px;
+}
+
+.clear-both{
+    clear: both;
+}
+
+.tab-container{
+    overflow:hidden;
+}
+
+.tab-content{
+    margin-top: 20px;
+}
