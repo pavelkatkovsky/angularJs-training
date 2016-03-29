@@ -15,15 +15,15 @@
     <h1>{{message1}}</h1>
 
     <div class="container-div" ng-controller="firstController">
-        <modal handler="handler1" title="title" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()">
+        <modal handler="handler" title="title" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()">
             {{body}} {{handler}}
         </modal>
         <a href="#{{handler}}" role="button" class="btn btn-info" data-toggle="modal">Launch Journal Modal</a>
     </div>
 
     <div class="container-div" ng-controller="secondController">
-        <modal handler="handler1" title="title" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()">
-            {{body}} {{handler}} ghfjhgfhjgfhjgfhjgfhjgfgf
+        <modal handler="handler" title="title" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()">
+            {{body}}sssss {{handler}} ghfjhgfhjgfhjgfhjgfhjgfgf
         </modal>
         <a href="#{{handler}}" role="button" class="btn btn-info" data-toggle="modal">Launch Movie Modal</a>
     </div>
@@ -31,13 +31,13 @@
     <h1>{{message2}}</h1>
 
     <div class="container-div" ng-controller="firstController">
-        <modal-component handler="handler" title="title" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()"></modal-component>
-        <a href="#{{handler}}" role="button" class="btn btn-info" data-toggle="modal">Launch Journal Modal</a>
+        <modal-component handler="handler1" title="title" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()"></modal-component>
+        <a href="#{{handler1}}" role="button" class="btn btn-info" data-toggle="modal">Launch Journal Modal</a>
     </div>
 
     <div class="container-div" ng-controller="secondController">
-        <modal-component handler="handler" title="title" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()"></modal-component>
-        <a href="#{{handler}}" role="button" class="btn btn-info" data-toggle="modal">Launch Movie Modal</a>
+        <modal-component handler="handler1" title="title" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()"></modal-component>
+        <a href="#{{handler1}}" role="button" class="btn btn-info" data-toggle="modal">Launch Movie Modal</a>
     </div>
 
 </body>

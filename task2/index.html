@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2 - tabs</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-app="task2">
+    <tab-control>
+        <pane-control title="Hello">
+            <h4>Hello</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+        </pane-control>
+        <pane-control title="World">
+            <h4>World</h4>
+            <em>Mauris elementum elementum enim at suscipit.</em>
+            <p><a href ng-click="i = i + 1">counter: {{i || 0}}</a></p>
+        </pane-control>
+    </tab-control>
+</body>
+</html>
